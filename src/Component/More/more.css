@@ -1,0 +1,34 @@
+.one-faq_eachitem {
+    background-color: #282828;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    
+    width: 71%;
+  }
+  
+  .one-faq_question {
+    font-size: 1.125rem;
+ 
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    padding-left: 32px; /* فضای برای آیکون */
+  }
+  
+  .one-faq_icon {
+    position: absolute;
+    top: 50%;
+
+    left: 16px;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+  }
+  
+  .one-faq_answer {
+ 
+    color: #9e9c9c;
+    padding-top: 8px;
+  }
+  

@@ -1,0 +1,109 @@
+.flex-container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: flex-start; /* Align items to the top */
+    position: relative; /* Make the container a reference for absolute positioning */
+    padding: 20px; /* Optional: Add padding */
+}
+
+.flex-container h1 {
+    position: absolute;
+top: 15%; /* Stick to the top */
+    left: 36%;
+    transform: translateX(-50%); /* Center horizontally */
+    /* Remove default margin */
+    padding: 10px; /* Optional: Add padding */
+    right: 25%;
+    border-radius: 5px; /* Optional: Add border radius */
+}
+.flex-container h2 {
+    color: #8e8d8d;
+    text-align: right;
+    position: absolute;
+top: 22%; /* Stick to the top */
+    left: 28%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Optional: Add padding */
+    right: 24%;
+    border-radius: 5px; /* Optional: Add border radius */
+}
+.flex-container h3 {
+    display: flex;
+   
+    color: #8e8d8d;
+    text-align: right;
+    position: absolute;
+top: 30%; /* Stick to the top */
+    left: 52.6%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Optional: Add padding */
+    right: 24%;
+    border-radius: 5px; /* Optional: Add border radius */
+}
+.flex-container h4 {
+    display: flex;
+   
+    color: #8e8d8d;
+    text-align: right;
+    position: absolute;
+top: 41%; /* Stick to the top */
+    left: 52.6%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Optional: Add padding */
+    right: 27%;
+    border-radius: 5px; /* Optional: Add border radius */
+}
+.flex-container h5 {
+    display: flex;
+   
+    color: #8e8d8d;
+    text-align: right;
+    position: absolute;
+top: 53%; /* Stick to the top */
+    left: 52.6%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Optional: Add padding */
+    right: 15%;
+    border-radius: 5px; /* Optional: Add border radius */
+}
+p{    display: flex;
+    color: #9c9b9b;
+    text-align: right;
+    position: absolute;
+top: 36%; /* Stick to the top */
+    left: 49%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Optional: Add padding */
+    right: 24%;
+    border-radius: 5px; /* Optional: Add border radius */}
+    p1{    display: flex;
+        color: #9c9b9b;
+        text-align: right;
+        position: absolute;
+    top: 47%; /* Stick to the top */
+        left: 49%;
+        transform: translateX(-50%); /* Center horizontally */
+        margin: 0; /* Remove default margin */
+        padding: 10px; /* Optional: Add padding */
+        right: 0%;
+        border-radius: 5px; /* Optional: Add border radius */}
+
+        p2{    display: flex;
+            color: #9c9b9b;
+            text-align: right;
+            position: absolute;
+        top: 59%; /* Stick to the top */
+            left: 49%;
+            transform: translateX(-50%); /* Center horizontally */
+            margin: 0; /* Remove default margin */
+            padding: 10px; /* Optional: Add padding */
+            right: 20%;
+            border-radius: 5px; /* Optional: Add border radius */}
+.flex-container img {
+    margin-top: 50px; /* Add margin to separate from h1 */
+}
