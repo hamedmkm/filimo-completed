@@ -1,3 +1,4 @@
+/* Flex container styles */
 .flex-container {
     display: flex;
     justify-content: flex-end; /* Align items to the right */
@@ -6,104 +7,142 @@
     padding: 20px; /* Optional: Add padding */
 }
 
-.flex-container h1 {
+/* Styles for h1-h5 and paragraphs */
+.flex-container h1, .flex-container h2, .flex-container h3, .flex-container h4, .flex-container h5,
+.flex-container p, .flex-container p1, .flex-container p2 {
     position: absolute;
-top: 15%; /* Stick to the top */
-    left: 36%;
     transform: translateX(-50%); /* Center horizontally */
-    /* Remove default margin */
     padding: 10px; /* Optional: Add padding */
-    right: 25%;
     border-radius: 5px; /* Optional: Add border radius */
 }
+
+/* Specific positioning for each element */
+.flex-container h1 {
+    top: 15%; /* Stick to the top */
+    left: 36%;
+    right: 25%;
+}
+
 .flex-container h2 {
     color: #8e8d8d;
     text-align: right;
-    position: absolute;
-top: 22%; /* Stick to the top */
+    top: 22%; /* Stick to the top */
     left: 28%;
-    transform: translateX(-50%); /* Center horizontally */
-    margin: 0; /* Remove default margin */
-    padding: 10px; /* Optional: Add padding */
     right: 24%;
-    border-radius: 5px; /* Optional: Add border radius */
 }
+
 .flex-container h3 {
     display: flex;
-   
     color: #8e8d8d;
     text-align: right;
-    position: absolute;
-top: 30%; /* Stick to the top */
+    top: 30%; /* Stick to the top */
     left: 52.6%;
-    transform: translateX(-50%); /* Center horizontally */
-    margin: 0; /* Remove default margin */
-    padding: 10px; /* Optional: Add padding */
     right: 24%;
-    border-radius: 5px; /* Optional: Add border radius */
 }
+
 .flex-container h4 {
     display: flex;
-   
     color: #8e8d8d;
     text-align: right;
-    position: absolute;
-top: 41%; /* Stick to the top */
+    top: 41%; /* Stick to the top */
     left: 52.6%;
-    transform: translateX(-50%); /* Center horizontally */
-    margin: 0; /* Remove default margin */
-    padding: 10px; /* Optional: Add padding */
     right: 27%;
-    border-radius: 5px; /* Optional: Add border radius */
 }
+
 .flex-container h5 {
     display: flex;
-   
     color: #8e8d8d;
     text-align: right;
-    position: absolute;
-top: 53%; /* Stick to the top */
+    top: 53%; /* Stick to the top */
     left: 52.6%;
-    transform: translateX(-50%); /* Center horizontally */
-    margin: 0; /* Remove default margin */
-    padding: 10px; /* Optional: Add padding */
     right: 15%;
-    border-radius: 5px; /* Optional: Add border radius */
 }
-p{    display: flex;
+
+.flex-container p {
+    display: flex;
     color: #9c9b9b;
     text-align: right;
-    position: absolute;
-top: 36%; /* Stick to the top */
+    top: 36%; /* Stick to the top */
     left: 49%;
-    transform: translateX(-50%); /* Center horizontally */
-    margin: 0; /* Remove default margin */
-    padding: 10px; /* Optional: Add padding */
     right: 24%;
-    border-radius: 5px; /* Optional: Add border radius */}
-    p1{    display: flex;
-        color: #9c9b9b;
-        text-align: right;
-        position: absolute;
-    top: 47%; /* Stick to the top */
-        left: 49%;
-        transform: translateX(-50%); /* Center horizontally */
-        margin: 0; /* Remove default margin */
-        padding: 10px; /* Optional: Add padding */
-        right: 0%;
-        border-radius: 5px; /* Optional: Add border radius */}
+}
 
-        p2{    display: flex;
-            color: #9c9b9b;
-            text-align: right;
-            position: absolute;
-        top: 59%; /* Stick to the top */
-            left: 49%;
-            transform: translateX(-50%); /* Center horizontally */
-            margin: 0; /* Remove default margin */
-            padding: 10px; /* Optional: Add padding */
-            right: 20%;
-            border-radius: 5px; /* Optional: Add border radius */}
+.flex-container p {
+    display: flex;
+    color: #9c9b9b;
+    text-align: right;
+    top: 47%; /* Stick to the top */
+    left: 49%;
+    right: 0%;
+}
+
+.flex-container p2 {
+    display: flex;
+    color: #9c9b9b;
+    text-align: right;
+    top: 59%; /* Stick to the top */
+    left: 49%;
+    right: 20%;
+}
+
+/* Image style */
 .flex-container img {
     margin-top: 50px; /* Add margin to separate from h1 */
+}
+
+/* Responsive Styles for 414x896px and larger devices */
+@media (max-width: 896px) {
+    .flex-container h1 {
+        left: 50%;
+        right: 0;
+        top: 10%;
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .flex-container h2 {
+        left: 50%;
+        top: 18%;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .flex-container h3 {
+        left: 50%;
+        top: 25%;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .flex-container h4 {
+        left: 50%;
+        top: 35%;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .flex-container h5 {
+        left: 50%;
+        top: 45%;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .flex-container p {
+        left: 50%;
+        top: 32%;
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+
+    .flex-container p1 {
+        left: 50%;
+        top: 42%;
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+
+    .flex-container p2 {
+        left: 50%;
+        top: 55%;
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+
+    .flex-container img {
+        width: 100%; /* Make the image responsive */
+        margin-top: 20px; /* Reduce the margin between image and text */
+    }
 }

@@ -1,40 +1,76 @@
 /* midle3.css */
 
+/* Container styles */
 .container {
-    display: flex;
-    align-items: right;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Text container styles */
+.text-container {
+  max-width: 60%;
+}
+
+/* Heading styles */
+h1, h2 {
+  margin: 0;
+  text-align: right;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  width: 55%;
+  margin: 1rem 0;
+  line-height: 1.5;
+  word-break: break-word; /* برای شکستن خطوط در متن طولانی */
+}
+
+/* Image styles */
+img {
+  width: 35%;
+  height: auto;
+  object-fit: cover; /* برای جلوگیری از تغییر نسبت ابعاد تصویر */
+}
+
+/* Button styles */
+button {
+  margin: 5px;
+}
+
+/* Responsive Styles for 414x896px and larger devices */
+@media (max-width: 896px) {
+  .container {
+      flex-direction: column; /* Stacking elements vertically for small screens */
+      align-items: center;
+      justify-content: center;
   }
-  
+
   .text-container {
-    max-width: 60%;
+      max-width: 90%; /* Increase text container width for smaller screens */
+      margin-bottom: 20px;
   }
-  
-  h1, h2 {
-    margin: 0;
-    text-align: right;
-  }
-  
+
   h1 {
-    font-size: 1.5rem;
+      font-size: 1.2rem; /* Adjust font size for h1 */
   }
-  
+
   h2 {
-    font-size: 1rem;
-    width: 55%;
-    margin: 1rem 0;
-    line-height: 1.5;
-    word-break: break-word; /* برای شکستن خطوط در متن طولانی */
+      font-size: 0.9rem; /* Adjust font size for h2 */
+      width: 100%; /* Make the text container width full */
   }
-  
+
   img {
-    width: 35%;
-    height: auto;
-    object-fit: cover; /* برای جلوگیری از تغییر نسبت ابعاد تصویر */
+      width: 80%; /* Make the image take more space on smaller screens */
   }
-  
+
   button {
-    margin: 5px;
+      width: 100%; /* Make the button take the full width */
+      margin-top: 10px;
   }
-  
+}

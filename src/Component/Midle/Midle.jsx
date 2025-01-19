@@ -25,7 +25,7 @@ const Midle = () => {
                 <CiMobile2  className="ml-2 size-7" />
                
             </h4>
-            <p1 className="text-xs font-bold">
+            <p className="text-xs font-bold">
                 
             Android Phone & Tablets - Iphone and Ipad - Amazon Fire Tablets
                 
@@ -33,7 +33,7 @@ const Midle = () => {
             
             
             
-            </p1>
+            </p>
 
 
             <h5 className="text-base  font-bold">
@@ -42,10 +42,10 @@ const Midle = () => {
                 <BsController  className="ml-2 size-7" />
                
             </h5>
-            <p2 className="text-xs font-bold">
+            <p className="text-xs font-bold">
                 
             Xbox Series S - Xbox Seris X - PS5 - PS4
-            </p2>
+            </p>
 
 
             <button href="#" className="bg-[#47d447] font-bold hover-link text-xئ mr-[5%] flex items-center justify-center text-center text-white mt-[25%] rounded-2xl py-3 px-7  font-inherit ">  خرید اشتراک و تماشا 
