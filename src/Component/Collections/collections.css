@@ -1,0 +1,12 @@
+.relative:hover .group-hover\:block {
+    display: block;
+    
+}
+.hover-box:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* تغییر رنگ پس زمینه به رنگ مورد نظر در حالت hover */
+    transition: background-color 0.3s ease; /* اضافه کردن یک افکت انتقال برای تغییر رنگ */
+}
+.hover-link:hover {
+    color: #2b2b2b; /* تغییر رنگ متن در حالت hover */
+    transition: color 0.3s ease; /* اضافه کردن یک افکت انتقال برای تغییر رنگ */
+}

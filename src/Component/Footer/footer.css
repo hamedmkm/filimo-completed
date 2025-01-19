@@ -1,0 +1,275 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.9s ease;
+}
+
+.bg-transparent {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.bg-black {
+    background-color: #000000; 
+}
+
+.header {
+    position: relative;
+    background-image: url(../dist/Image/2.jpeg);
+    width: 100%;
+    background-size: cover;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(29, 30, 30) 80%);
+}
+
+/* Hover box styles */
+.hover-box {
+    transition: all 0.9s ease;
+}
+
+.hover-box:hover {
+    opacity: 1;
+}
+
+.hover-box:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.hover-link:hover {
+    color: #2b2b2b;
+    transition: color 0.3s ease;
+}
+
+/* Switch categories */
+.switch_cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid #706d6d;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 34px;
+    font-family: Arial, sans-serif;
+}
+
+.switch_option {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        height: 50vh;
+    }
+
+    .hover-box {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .switch_cat {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .text-sm {
+        font-size: 12px;
+    }
+
+    .text-xl {
+        font-size: 18px;
+    }
+
+    .text-2xl {
+        font-size: 24px;
+    }
+}
+
+/* Responsive for 414px x 896px and larger screens */
+@media (max-width: 896px) {
+    /* Adjust the header height for mobile devices */
+    .header {
+        height: 40vh; /* Decrease the height for better visibility on smaller screens */
+        background-position: center center; /* Ensure the background image is centered */
+    }
+
+    .hover-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .switch_cat {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    /* Adjust font sizes for better readability */
+    .text-sm {
+        font-size: 14px;
+    }
+
+    .text-xl {
+        font-size: 20px;
+    }
+
+    .text-2xl {
+        font-size: 26px;
+    }
+
+    /* Make sure content isn't too large */
+    .fixed-header {
+        padding: 10px;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 896px) {
+    .header {
+        height: 60vh; /* Increased header height for larger screens */
+    }
+
+    .hover-box {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .switch_cat {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .text-sm {
+        font-size: 16px;
+    }
+
+    .text-xl {
+        font-size: 22px;
+    }
+
+    .text-2xl {
+        font-size: 28px;
+    }
+}
+/* footer.css */
+
+/* Global Styles for larger screens */
+.fixed-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.fixed-header button {
+    margin-right: 10px;
+}
+
+/* For smaller screens with max-width of 896px */
+@media (max-width: 896px) {
+    .fixed-header {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
+        padding: 10px;
+    }
+
+    /* Adjust button sizes and layout */
+    .fixed-header button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Adjust images and icons sizes */
+    .fixed-header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header h2 {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    /* Adjust content sections */
+    .header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header h2 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .hover-box {
+        width: 80%; /* Make boxes take up more space on smaller screens */
+        margin: 10px auto;
+    }
+
+    .switch_cat {
+        width: 80%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .switch_option {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    /* Adjust content layout on mobile */
+    .content {
+        padding: 10px;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+
+    /* Make the footer buttons take up more space */
+   
+}
+
+/* Additional breakpoints for even smaller screens if needed */
+@media (max-width: 414px) {
+    .header h2 {
+        font-size: 1.1rem; /* Further reduce font size for very small screens */
+    }
+
+    .hover-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    
+}
